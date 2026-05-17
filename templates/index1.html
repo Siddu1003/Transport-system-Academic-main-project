@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Traffic Forecasting</title>
+  <meta content="" name="Techsquare - Creative Agency ItSolution Responsive WebsiteTemplate">
+  <meta content="" name="ZRTHEMES">
+
+  <!-- Favicons -->
+  <link href="static/assets/images/favicon.png" rel="icon">
+  <link href="static/assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="static/assets/stylesheets/styles.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-end">
+      
+      <div class="d-none d-md-flex align-items-center">
+        
+        <span> | </span>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container container-xl d-flex align-items-center justify-content-between">
+      <a href="#" class="logo d-flex align-items-center">
+        <h1>Traffic Forecasting<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          
+          <li class="dropdown"><a href="#"><span>Prediction</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/index1">YOLO Prediction</a></li>
+              <li><a href="/index">Ensemble Learning Prediction</a></li>
+              <!-- <li><a href="/index1">YOLO Prediction</a></li> -->
+              
+            </ul>
+          </li>
+          <li><a href="/about">Visualization</a></li>
+          <li class="dropdown"><a href="#"><span>Notebook</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/notebook2">YOLO Code</a></li>
+              <li><a href="/notebook1">Ensemble Learning Code</a></li>
+              <!-- <li><a href="/notebook2">YOLO Code</a></li> -->
+              
+            </ul>
+          </li>
+          <li><a href="/login">Signout</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- - - - - - - - -  Hero Section - - - - - - - -  -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center text-left caption">
+          <h1 data-aos="fade-left" data-aos-delay="100">Welcome To <span class="circle"  data-aos="fade-left" data-aos-delay="150"></span></h1>
+          <h3 data-aos="zoom-out" data-aos-delay="500">Intelligent Transportation System For Traffic Forecasting Using YOLO and Ensemble Learning Techniques</h3>
+          
+          
+        </div>
+        <div class="col-lg-5 d-flex flex-column align-items-start justify-content-center text-left caption mobile-pt">
+          <img src="static/assets/images/hero-img.png" class="img-fluid mb-4" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <div id="services" class="bg-design-before section">
+       <!-- - - - - - - - -  Why Us Section - - - - - - - -  -->
+    <div id="whyus" class="section about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Traffic Forecasting</h2>
+          
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+						
+			      <br><br><br>
+    
+					<form class="form-signin" action="/predict1" method=post enctype=multipart/form-data  onsubmit="return validateForm()">
+						<h1 class="h3 mb-3 font-weight-normal" style="color: black;">Upload vehicles Traffic Image</h1> <br><br><br>
+						<input type="file" name="file" class="form-control-file" id="inputfile"><br>
+            <!-- <span id="warning" style="color: red; display: none; font-size: xx-large; font-style: italic;">Please select a jpg, jpeg, png file For Forecasting.</span> -->
+						<br><br>
+						<button style="width: 500px; border-radius: 10px;" class="btn btn-lg btn-primary btn-block" type="submit">Predict</button>
+						
+					</form>
+					<script src="//code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+					<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+					<script src="//stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+					<script type="text/javascript">
+					$('#inputfile').bind('change', function() {
+						let fileSize = this.files[0].size/1024/1024; // this gives in MB
+						if (fileSize > 20) {
+							$("#inputfile").val(null);
+							alert('file is too big. files more than 10MB are not allowed')
+							return
+						}
+
+						let ext = $('#inputfile').val().split('.').pop().toLowerCase();
+						if($.inArray(ext, ['jpg','jpeg','png']) == -1) {
+							$("#inputfile").val(null);
+							alert('only jpeg/jpg files are allowed!');
+						}
+					});
+					</script>
+      
+      <script>
+        function validateForm() {
+            var fileInput = document.getElementById('inputfile');
+            if (fileInput.files.length === 0) {
+              window.alert("Please Upload a file for Prediction.");
+                // document.getElementById('warning').style.display = 'block';
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission
+        }
+    </script>
+
+	<br><br><br><br><br>
+</div>
+</div>
+
+</div>
+</div><!-- End About Us Section -->
+</div>
+
+
+<!-- - - - - - - - -  Footer - - - - - - - -  -->
+<footer id="footer" class="bg-design-after pb-0 footer-section">
+
+<div class="copyright-area">
+<div class="container">
+	<div class="row">
+		<div class="col-xl-6 col-lg-6 text-left text-lg-left">
+			<div class="copyright-text">
+				<p>Techsquare<span>.</span> © 2024 - Designed by Data Science Students Batch-9.</p>
+			</div>
+		</div>
+		<div class="col-xl-6 col-lg-6 d-none d-lg-block">
+			<div class="footer-menu text-right">
+			  <a href="#"><i class="fa fa-facebook facebook-bg"></i></a>
+			  <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+			  <a href="#"><i class="fa fa-google google-bg"></i></a>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+class="bi bi-arrow-up-short"></i></a>
+
+
+<!-- Vendor JS Files -->
+<script src="static/assets/javascripts/jquery.min.js"></script>
+<script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/aos/aos.js"></script>
+<script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="static/assets/javascripts/plugins.js"></script>
+<script src="static/assets/javascripts/validator.min.js"></script>
+<script src="static/assets/javascripts/contactform.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/assets/javascripts/main.js"></script>
+
+</body>
+
+</html>

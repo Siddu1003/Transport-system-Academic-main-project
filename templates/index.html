@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Traffic Forecasting</title>
+  <meta content="" name="Techsquare - Creative Agency ItSolution Responsive WebsiteTemplate">
+  <meta content="" name="ZRTHEMES">
+
+  <!-- Favicons -->
+  <link href="static/assets/images/favicon.png" rel="icon">
+  <link href="static/assets/images/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="static/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/assets/stylesheets/font-awesome.min.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="static/assets/stylesheets/styles.css" rel="stylesheet">
+
+  <style>
+    button[type="submit"]{
+            background-color: limegreen;
+            color: white;
+            padding: 12px 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+    }
+    button[type="submit"]:hover{
+      background-color: green;
+    }
+    .output-container {
+            display: inline-block;
+        }
+
+        .output-text {
+            display: inline-block;
+            font-size: xx-large;
+            font-weight: bold;
+        }
+
+        .color-box {
+            display: inline-block;
+            width: 200px; /* Adjust the width as needed */
+            height: 200px; /* Adjust the height as needed */
+            margin-left: 200px; /* Adjust the spacing between the text and the box */
+            vertical-align: middle; /* Align the color box vertically with the text */
+            border-radius: 150px;
+            border-top: 18px solid black;
+            border-bottom: 4px solid black; 
+            border-left: 8px solid black;
+            border-right: 8px solid black;
+            padding: 20px;
+            position: absolute;  
+        }
+        .result-container{
+          position: absolute;
+          margin-top: 100px;
+        }
+        .h3{
+          font-size: xx-large;
+        }
+  </style>
+</head>
+
+<body>
+  <div id="preloader"></div>
+
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-end">
+      
+      <div class="d-none d-md-flex align-items-center">
+        
+        <span> | </span>
+        <div class="social-links d-none d-md-flex align-items-center">
+          <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container container-xl d-flex align-items-center justify-content-between">
+      <a href="#" class="logo d-flex align-items-center">
+        <h1>Traffic Forecasting<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          
+          <li class="dropdown"><a href="#"><span>Prediction</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/index1">YOLO Prediction</a></li>
+              <li><a href="/index">Ensemble Learning Prediction</a></li>
+              <!-- <li><a href="/index1">YOLO Prediction</a></li> -->
+              
+            </ul>
+          </li>
+          <li><a href="/about">Visualization</a></li>
+          <li class="dropdown"><a href="#"><span>Notebook</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/notebook2">YOLO Code</a></li>
+              <li><a href="/notebook1">Ensemble Learning Code</a></li>
+              <!-- <li><a href="/notebook2">YOLO Code</a></li> -->
+              
+            </ul>
+          </li>
+          <li><a href="/login">Signout</a></li>
+          
+        </ul>
+      </nav><!-- .navbar -->
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <!-- - - - - - - - -  Hero Section - - - - - - - -  -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in">
+        <div class="col-lg-7 d-flex flex-column align-items-start justify-content-center text-left caption">
+          <h1 data-aos="fade-left" data-aos-delay="100">Welcome To <span class="circle"  data-aos="fade-left" data-aos-delay="150"></span></h1>
+          <h3 data-aos="zoom-out" data-aos-delay="500">Intelligent Transportation System For Traffic Forecasting Using YOLO and Ensemble Learning Techniques</h3>
+          
+          
+        </div>
+        <div class="col-lg-5 d-flex flex-column align-items-start justify-content-center text-left caption mobile-pt">
+          <img src="static/assets/images/hero-img.png" class="img-fluid mb-4" alt="">
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <div id="services" class="bg-design-before section">
+       <!-- - - - - - - - -  Why Us Section - - - - - - - -  -->
+    <div id="whyus" class="section about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Traffic Forecasting</h2>
+          
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-6">
+						
+			      <br><br><br>
+
+  
+			<form id="prediction_form" action="/predict" method="post" style="width: 50%;font-size: 1.2em;margin-left: 5px;border-color: black;">
+								
+									
+      <div style="position: absolute; top: 15%; left: 20%;">
+			  <div class="form-group">
+				  <label class="text-uppercase" for="age">Date</label>
+				  <input class="form-control" type="text" id="age" name="0" required="" pattern="(?:[1-9]|[12][1-9]|3[01])" title="Please Enter a Date only between 1 to 31..">
+			  </div>
+        </div>
+			<br>
+				
+			<div style="position: absolute; top: 15%; right: 25%;">						
+			  <div class="form-group">
+				  <label class="text-uppercase" for="age" style="display: inline-block; width: 240px">Day of the Week</label>
+				  <select class="form-control" id="age" name="1" required="required">
+					  <option value="">choose</option>
+					  <option value="1">MONDAY</option>
+					  <option value="5">TUESDAY</option>
+					  <option value="6">WEDNESDAY</option>
+					  <option value="4">THURSDAY</option>
+					  <option value="0">FRIDAY</option>
+					  <option value="2">SATURDAY</option>
+					  <option value="3">SUNDAY</option>
+				  </select>
+        </div>						
+			</div>
+			<br>
+
+			
+			 <div style="position: absolute; top: 30%; left: 20%;">
+			  <div class="form-group">
+				  <label for="age">Car Count</label>
+				  <input class="form-control" type="text" id="age" name="2" required="" pattern="[0-9]*" title="Please Enter only Positive numbers..">
+			  </div>
+      </div>
+        <br>
+			
+      <div style="position: absolute; top: 30%; right: 25%;">
+			  <div class="form-group">
+				  <label for="age">Bike Count</label>
+				  <input class="form-control" type="text" id="age" name="3" required="" pattern="[0-9]*" title="Please Enter only Positive numbers..">
+			  </div>
+      </div>
+			<br>
+
+			
+			<div style="position: absolute; top: 43%; left: 20%;">
+			  <div class="form-group">
+				  <label  for="age">Bus Count</label>
+				  <input class="form-control" type="text" id="age" name="4" required="" pattern="[0-9]*" title="Please Enter only Positive numbers..">
+			  </div>
+      </div>
+			<br>
+
+			<div style="position: absolute; top: 43%; right: 25%;">
+			  <div class="form-group">
+				  <label for="age">Truck Count</label>
+				  <input class="form-control" type="text" id="age" name="5" required="" pattern="[0-9]*" title="Please Enter only Positive numbers..">
+			  </div>
+      </div>
+			<br>
+
+      <div style="position: absolute; top: 57%; left: 20%;">
+			  <div class="form-group">
+				  <label for="age">Total Vehicle</label>
+				  <input class="form-control" type="text" id="age" name="6" required="" pattern="[0-9]*" title="Please Enter only Positive numbers..">
+			  </div>
+      </div>
+			<br>
+							
+     		
+			<br><br><br>
+			  <button type="submit" class="button" style="position: absolute; top: 70%; left: 43%;">Predict</button> 
+      </div>
+      <div id="prediction_result" style="margin-top: -150px; margin-left: 100px"></div>
+    </div>
+
+
+
+     <br><br><br> 
+  
+<div class="result-container">
+  
+  {% if output %} 
+      <div class="output-container">
+        <h3>Result:</h3>
+          <div class="output-text">{{ output }}</div>
+          {% if 'VERY HEAVY' in output or 'HEAVY' in output %}
+              <div class="color-box" style="background-color: limegreen;"></div>
+          {% elif 'LOW' in output or 'NORMAL' in output %}
+              <div class="color-box" style="background-color: red;"></div>
+          {% endif %}
+      </div>
+  {% endif %} 	
+
+</div>					
+
+<br><br><br>
+			</form>
+          <br>
+
+		
+<br><br><br><br>
+</div>
+</div>
+
+</div>
+</div><!-- End About Us Section -->
+</div>
+
+
+<!-- - - - - - - - -  Footer - - - - - - - -  -->
+<footer id="footer" class="bg-design-after pb-0 footer-section">
+
+<div class="copyright-area">
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-lg-6 text-left text-lg-left">
+            <div class="copyright-text">
+                <p>Techsquare<span>.</span> © 2024 - Designed by Data Science Students Batch-9.</p>
+            </div>
+        </div>
+        <div class="col-xl-6 col-lg-6 d-none d-lg-block">
+            <div class="footer-menu text-right">
+              <a href="#"><i class="fa fa-facebook facebook-bg"></i></a>
+              <a href="#"><i class="fa fa-twitter twitter-bg"></i></a>
+              <a href="#"><i class="fa fa-google google-bg"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</footer>
+<!-- End Footer -->
+
+<a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+class="bi bi-arrow-up-short"></i></a>
+
+
+<!-- Vendor JS Files -->
+<script src="static/assets/javascripts/jquery.min.js"></script>
+<script src="static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="static/assets/vendor/aos/aos.js"></script>
+<script src="static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="static/assets/javascripts/plugins.js"></script>
+<script src="static/assets/javascripts/validator.min.js"></script>
+<script src="static/assets/javascripts/contactform.js"></script>
+
+<!-- Template Main JS File -->
+<script src="static/assets/javascripts/main.js"></script>
+
+
+
+</body>
+
+</html>

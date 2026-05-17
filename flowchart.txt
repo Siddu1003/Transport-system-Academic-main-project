@@ -1,0 +1,81 @@
+Image Based Detection
+----------------------
+
+1. Importing the packages
+2. Exploring the dataset 
+	- Reading the image
+	- plotting the image
+3. Image Processing
+	- converting to blob object
+	- defining the class
+	- declaring the bounding box
+	- convert the array to a numpy array
+4. Loading the pre-trained model
+	- reading the network layers
+	- extract the output layers
+5. Image processing
+	- appending the image - annotation file and images
+	- converting bgr to rgb
+	- creating the mask
+	- resizing the image
+6. Data Augmentation
+	- randoming the image
+	- rotating the image
+	- transforming the image
+
+7. Installing the packages required for yolo in Colab
+8. Processing the Data based on yolo model
+9. Building the model in colab
+
+	- YoloV5
+	- YoloV6
+	- YoloV7
+	- YoloV8
+
+
+Data Based Prediction
+----------------------
+
+
+10. Importing the packages
+11. Exploring the dataset 
+	Traffic Data
+12. Data Processing
+	Removing Duplicate Data
+	Drop Cleaning  
+13. Visualization Data using Seaborn and Matplotlib
+14. Label Encoding 
+	Encoding Str to int
+15. Feature Selection 
+16. Splitting the data to train and test
+17. Building the model
+
+	- SVM
+	- AdaBoost
+	- XGBoost
+	- Voting Classifier (Bagging with RF + DT)
+
+18. Dumping the model separately for frontend
+
+
+Flask Framework
+----------------
+
+19. Flask Framework with Sqlite for signup and signin
+20. User gives input 
+	- Data for Prediction
+		-  the given input preprocessed and with trained model is used for predicting the traffic
+	- Image for Detection
+		- The given input preprocessed and with trained model is used for detection
+ 		- The segmented each object and put bounding box 
+21. Final outcome is displayed
+
+
+Extension
+----------
+In the base paper the author mentioned to use machine learning model for predicting the traffic prediction, from which SVM got 65% of accuracy,
+As an extension we applied an ensemble method  combining the predictions of multiple individual models to produce a more robust and accurate final prediction. 
+However, we can further enhance the performance by exploring other ensemble techniques such as Voting Classifier, which got 100% accuracy,
+Along with that we implement the Yolo Series(V5,V6,V7 and V8) for detecting the Traffic in Image whether it is High, Moderate and Low traffic
+(with this we can use this model real time detection and give alert message in the future)
+As an extension we can build the front end using the flask framework for user testing and with user authentication
